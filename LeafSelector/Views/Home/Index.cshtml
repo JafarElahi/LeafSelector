@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .row {
+        display: block;
+        margin: 30px;
+    }
+</style>
+<form >
+    <div class="row">
+        <div id="categorySelector" 
+             name="categorySelector" 
+             class="leafselector"
+             data-name="categoryId"
+             data-source="\Home\SubCategories"
+             data-parentId="11"
+             data-id="112"
+             data-seperator="&gt;"
+             data-text="Sample 112">
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+@section scripts{
+    <script src="~/Scripts/dot.js"></script>
+    <script src="~/Scripts/LeafSelector.js"></script>
+}
+@section styles{
+    <link rel="stylesheet" href="~/Content/LeafSelector.css" />
+}

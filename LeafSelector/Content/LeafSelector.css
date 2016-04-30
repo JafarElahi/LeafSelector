@@ -1,0 +1,58 @@
+﻿.leafselector {
+    font-size: 16px;
+    font-family: Tahoma;
+    width: 600px;
+}
+
+    .leafselector .selector {
+        height: 40px;
+        width: 100%;
+
+    }
+
+    .leafselector .selector .text {
+        float: left;        
+        margin: 1px;
+    }
+
+    .leafselector .selector .caret {
+        float: right;
+        margin-top: 7px;
+    }
+
+    .leafselector .panel {
+        position: absolute;
+        background: #2c2679;
+        color: #fff;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .leafselector .panel .close{
+        float: right;
+        margin: 8px;
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .leafselector .panel li{
+        display: inline-block;
+        padding: 17px;
+        width: 200px;
+        cursor: pointer;
+        color: #ddd;
+        font-size: 16px;
+    }
+
+    .leafselector .panel .parent{
+        display: inline-block;
+        padding: 12px;
+        cursor: pointer;
+        color: #ddd;
+        font-size: 16px;
+    }
+    .leafselector .panel li:hover, .leafselector .panel .parent:hover{
+        color: #fff;
+        text-decoration: underline
+    }
+
